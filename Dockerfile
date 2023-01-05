@@ -5,6 +5,7 @@ COPY functions.sh /etc/samba/functions.sh
 COPY bashrc /root/.bashrc
 
 RUN apk update
+RUN apk add php
 RUN apk add samba bash
 RUN touch /etc/samba/firstrun
 RUN mkdir /share
